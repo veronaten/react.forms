@@ -1,0 +1,31 @@
+@import '../../index.scss';
+
+.header {
+  background-color: $mainColor;
+  height: 70px;
+  &__links {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    li {
+      font-size: 23px;
+      font-weight: 500;
+      color: $textColor;
+      a {
+        display: block;
+        margin-top: 20px;
+        color: $textColor;
+        text-decoration: none;
+        &:hover {
+          color: rgb(100, 216, 242);
+        }
+        &:active {
+          color: rgb(18, 163, 195);
+        }
+      }
+    }
+    &_active {
+      color: rgb(18, 163, 195);
+    }
+  }
+}

@@ -69,7 +69,7 @@ class Forms extends React.Component<Record<string, unknown>, FormState> {
         addCard: !!this.inputCheckbox.current?.checked,
       },
     };
-    console.log('initialState >>>', this.state);
+
     // this.valid = {
     //   city: !!this.inputText.current?.value,
     //   date: !!this.inputDate.current?.value,
@@ -108,13 +108,6 @@ class Forms extends React.Component<Record<string, unknown>, FormState> {
     if (this.inputText.current) this.inputText.current.value = '';
     if (this.inputDate.current) this.inputDate.current.value = '';
     if (this.inputCheckbox.current) this.inputCheckbox.current.checked = false;
-
-    console.log(
-      'invalid',
-      this.state.isInvalid.city,
-      this.state.isInvalid.date,
-      this.state.isInvalid.addCard
-    );
   }
 
   render() {
